@@ -4,21 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enfoque ambiental – Entendiendo nuestra conexión con el planeta</title>
-  
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-  
-  <!-- Lucide Icons -->
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
-  
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- ========================================== -->
-  <!-- ESTILOS PERSONALIZADOS (CSS)               -->
-  <!-- ========================================== -->
   <style>
     html, body {
       margin: 0;
@@ -146,10 +136,7 @@
         </div>
       </div>
     </section>
-
-    <!-- ========================================== -->
     <!-- ACTIVIDAD 1: DILEMAS ÉTICOS                -->
-    <!-- ========================================== -->
     <section id="dilemas" class="max-w-4xl mx-auto px-6 mb-20 scroll-mt-10">
       <div class="text-center mb-10 anim-fade">
         <span class="inline-block bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full mb-3 tracking-widest uppercase">Actividad 1: Reflexión</span>
@@ -181,10 +168,7 @@
         </div>
       </div>
     </section>
-
-    <!-- ========================================== -->
     <!-- ACTIVIDAD 2: ENCUESTA DE PERFIL AMBIENTAL  -->
-    <!-- ========================================== -->
     <section id="encuesta" class="max-w-4xl mx-auto px-6 mb-24 scroll-mt-10">
       <div class="text-center mb-10 anim-fade">
         <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full mb-3 tracking-widest uppercase">Actividad 2: Autoevaluación</span>
@@ -234,10 +218,7 @@
 
       </div>
     </section>
-
-    <!-- ========================================== -->
     <!-- SECCIÓN 3: GRÁFICO INTERACTIVO             -->
-    <!-- ========================================== -->
     <section id="grafico" class="max-w-5xl mx-auto px-6 mb-24 scroll-mt-10">
       <div class="text-center mb-10 anim-fade">
         <span class="inline-block bg-teal-100 text-teal-700 text-xs font-bold px-3 py-1 rounded-full mb-3 tracking-widest uppercase">Paso 3: Conoce la realidad</span>
@@ -262,10 +243,7 @@
         </div>
       </div>
     </section>
-
-    <!-- ========================================== -->
     <!-- SECCIÓN 4: PILARES DEL ENFOQUE AMBIENTAL   -->
-    <!-- ========================================== -->
     <section class="max-w-5xl mx-auto px-6 mb-16">
       <div class="text-center mb-10 anim-fade">
         <span class="inline-block bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-1 rounded-full mb-3 tracking-widest uppercase">Teoría fundamental</span>
@@ -357,14 +335,9 @@
 
 
   </div>
-
-  <!-- ========================================== -->
   <!-- LÓGICA PRINCIPAL (JAVASCRIPT)              -->
-  <!-- ========================================== -->
   <script>
-    // ========================================================
     // 1. LÓGICA DE ACTIVIDAD 1: DILEMAS ÉTICOS
-    // ========================================================
     const dilemas = [
       {
         q: 'Tu colegio quiere comprar 500 botellas de agua de plástico para el campeonato deportivo de fin de año.',
@@ -499,10 +472,7 @@
       const container = document.getElementById('dilemas-container');
       if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-
-    // ========================================================
     // 2. LÓGICA DE ACTIVIDAD 2: ENCUESTA DE PERFIL AMBIENTAL
-    // ========================================================
     const quizData = [
       {
         question: "1. ¿Qué haces normalmente con aparatos electrónicos malogrados (celulares, cables, audífonos)?",
@@ -645,10 +615,7 @@
       if (headerEl) headerEl.classList.remove('hidden');
       renderQuizQuestion();
     }
-
-    // ========================================================
     // 3. DATOS Y LÓGICA DE GRÁFICOS INTERACTIVOS
-    // ========================================================
     const chartData = {
       degradacion: {
         labels: ['Papel', 'Algodón', 'Cartón', 'Chicle', 'Lata', 'Plástico', 'Vidrio'],
@@ -782,10 +749,7 @@
       const tooltip = document.getElementById('chart-tooltip');
       if (tooltip) tooltip.classList.add('hidden');
     }
-
-    // ========================================================
     // INICIALIZACIÓN
-    // ========================================================
     document.addEventListener('DOMContentLoaded', () => {
       renderDilemas();
       renderQuizQuestion();
